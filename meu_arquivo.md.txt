@@ -1,0 +1,27 @@
+Notas de versão do Git 2.31.1
+==========================
+
+Correções desde v2.31
+-----------------
+
+ * A interface fsmonitor lê de sua entrada sem ter certeza
+   há algo para ler. Este bug é novo no 2.31
+   prazo.
+
+ * A estrutura de dados usada pela interface fsmonitor não estava correta
+   duplicado durante uma mesclagem in-core, levando ao uso pós-livre etc.
+
+ * "git bisect" reimplementado mais em C durante o período de 2.30, não
+   considere também uma tag anotada como um ponto de extremidade bom / ruim. Esta regressão
+   foi corrigido.
+
+ * Corrija macros que podem injetar silenciosamente instruções nulas não intencionais.
+
+ * A macro CALLOC_ARRAY () substitui muitos usos de xcalloc ().
+
+ * Atualize o insn nos comentários do Makefile para executar o destino fuzz-all.
+
+ * Corrigido um bug de canto em "git mv" em sistemas que não diferenciam maiúsculas de minúsculas
+   que foi introduzido no prazo de 2.29.
+
+Também contém várias atualizações de documentação e limpeza de código.

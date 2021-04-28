@@ -5,7 +5,7 @@ Correções desde v2.31
 -----------------
 
  * A interface fsmonitor lê de sua entrada sem ter certeza
-   há algo para ler. Este bug é novo no 2.31
+   há algo para ler. Este bug é novo no 2.3
    prazo.
 
  * A estrutura de dados usada pela interface fsmonitor não estava correta
